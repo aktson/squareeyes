@@ -1,1 +1,1 @@
-# squareeyes
+# Squareeyes site
