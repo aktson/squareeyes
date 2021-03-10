@@ -23,7 +23,7 @@
         <div class="navigation">
         <ul>
           <li>
-            <a class="active" href="index.html"
+            <a href="index.html"
               ><i class="fas fa-home"></i
             ></a>
           </li>
@@ -37,22 +37,26 @@
           </li>
         </div>
         <div class="cta-list">
-          <li><a class="cta" href="sign in.html">Sign in </a></li>
+          <li><a class="cta active" href="sign in.html">Sign in </a></li>
           <li><a class="cta" href="join now.html">Join now </a></li>
         </ul>
       </div>
       </nav>
     </header>
     <main>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-        consequuntur, dolorem rerum vel perferendis aperiam dolores. Excepturi
-        distinctio veritatis pariatur, atque aspernatur ut. Quia, cumque minus.
-        Quia libero aspernatur voluptas?
-        <a class="cta free-trial" href="start free trial.html"
-          >Start free trial
-        </a>
-      </p>
+      <section class="signin-form">
+        <form action="sign in.php">
+          <h2>Sign in</h2>
+          <label for="e-mail"> </label>
+          <input type="text" name="email" value="e-mail address" />
+          <label for="password"></label>
+          <input type="password" name="password" value="password" />
+          <a class="cta" href="sign in.html">Sign in </a>
+
+          <p>New to Squqareeyes?</p>
+          <a class="cta" href="join now.html">Join now </a>
+        </form>
+      </section>
     </main>
     <footer>&copy; 2021 NoPra all inclusive</footer>
   </body>
