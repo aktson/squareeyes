@@ -19,7 +19,6 @@ html {
 }
 * {
   padding: 0;
-
   margin: 0;
 }
 body {
@@ -28,7 +27,7 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 h1,
@@ -42,8 +41,7 @@ p {
   color: white;
 }
 /*global header and footer */
-header,
-footer {
+header {
   width: 100vw;
   font-family: "cuprum";
   color: white;
@@ -54,6 +52,17 @@ footer {
   grid-template-columns: 15% repeat(2, 100%);
   align-content: center;
 }
+footer {
+  width: 100vw;
+  font-family: "cuprum";
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  background-color: #040016;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+}
 #logo {
   padding: 5px;
   max-width: 100px;
@@ -61,13 +70,11 @@ footer {
   background-color: aliceblue;
 }
 
-
 nav ul {
   padding: 5px;
   display: grid;
   grid-template-columns: repeat(6, 10%);
   text-align: center;
- 
 }
 
 nav li,
@@ -125,13 +132,12 @@ nav li:hover {
 #hamburger-menu:checked ~ nav {
   display: block;
 }
-
-footer {
-  position: absolute;
-  bottom: 0px;
-  padding: 10px;
+main {
+  padding: 50px 20px;
+  text-align: left;
 }
-@media (max-width: 610px) {
+
+@media (max-width: 600px) {
   .hamburger {
     display: grid;
   }
@@ -149,7 +155,11 @@ footer {
     grid-template-rows: max-content;
     justify-content: center;
     align-content: center;
-   
+  }
+  main {
+    text-align: center;
+    padding: 50px 20px;
+  }
 }
 
 /*homepage */
@@ -165,9 +175,6 @@ footer {
   font-size: 0.9em;
 }
 
-main {
-  margin-top: 50px;
-}
 /* sign in page */
 .signin-form {
   width: 100%;
