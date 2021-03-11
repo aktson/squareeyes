@@ -16,6 +16,7 @@
 }
 html {
   box-sizing: border-box;
+  max-width: 100%;
 }
 * {
   padding: 0;
@@ -23,8 +24,6 @@ html {
 }
 body {
   background-image: url(../images/overlay.png);
-  max-width: 100%;
-  overflow: hidden;
 }
 *,
 *::before,
@@ -44,14 +43,13 @@ p {
 }
 /*global header and footer */
 header {
-  width: 100vw;
   font-family: "cuprum";
   color: white;
   letter-spacing: 2px;
   font-size: 0.9em;
   background-color: #040016;
   display: grid;
-  grid-template-columns: 15% repeat(2, 100%);
+  grid-template-columns: 10% repeat(2, 90%);
   align-content: center;
 }
 footer {
@@ -135,28 +133,24 @@ nav li:hover {
   display: block;
 }
 main {
-  padding: 50px 20px;
+  padding: 20px;
   text-align: left;
+  height: 80vh;
 }
 
 @media (max-width: 600px) {
   .hamburger {
     display: grid;
   }
-  header {
-    display: grid;
-    grid-template-columns: 15% 80% 5%;
-  }
+
   nav {
     display: none;
   }
   nav ul {
     padding: 5px;
     display: grid;
-    grid-template-columns: minmax(50px, auto);
-    grid-template-rows: max-content;
+    grid-template-columns: 0.3fr;
     justify-content: center;
-    align-content: center;
   }
   main {
     text-align: center;
