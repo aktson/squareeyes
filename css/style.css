@@ -22,7 +22,7 @@ html {
   margin: 0;
 }
 body {
-  background-image: url(../images/background.png);
+  background-image: url(../images/overlay.png);
 }
 *,
 *::before,
@@ -151,7 +151,7 @@ main {
   nav ul {
     padding: 5px;
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: minmax(50px, auto);
     grid-template-rows: max-content;
     justify-content: center;
     align-content: center;
