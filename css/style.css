@@ -44,7 +44,7 @@ p {
 /*global header and footer */
 header,
 footer {
-  width: 100%;
+  width: 100vw;
   font-family: "cuprum";
   color: white;
   letter-spacing: 2px;
