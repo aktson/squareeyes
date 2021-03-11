@@ -142,14 +142,18 @@ main {
   .hamburger {
     display: grid;
   }
-
+  header {
+    display: grid;
+    grid-template-columns: 10% 85% 5%;
+  }
   nav {
     display: none;
   }
   nav ul {
-    padding: 5px;
+    padding: 0px;
     display: grid;
-    grid-template-columns: 0.3fr;
+    grid-template-columns: minmax(50px, auto);
+    grid-template-rows: max-content;
     justify-content: center;
   }
   main {
