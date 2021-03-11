@@ -23,6 +23,8 @@ html {
 }
 body {
   background-image: url(../images/overlay.png);
+  max-width: 100%;
+  overflow: hidden;
 }
 *,
 *::before,
