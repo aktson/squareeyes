@@ -197,8 +197,10 @@ label {
 }
 .plan-container {
   display: flex;
+  flex-wrap: wrap;
   max-width: 650px;
-  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
 }
 .pro {
   font-family: "josefin", Arial, Helvetica, sans-serif;
@@ -235,7 +237,6 @@ label {
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    width: ;
   }
 
   main {
@@ -243,13 +244,15 @@ label {
   }
 
   .plan-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     max-width: 60%;
     gap: 20px;
   }
   .join {
     min-width: 100%;
     max-height: 90%;
+  }
+  .pro {
+    margin: 0 auto;
   }
 }
