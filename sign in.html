@@ -15,48 +15,44 @@
   <body>
     <header>
       <img id="logo" src="images/SquareEyes_Logo.png" alt="Squqareeyes logo" />
-      <label for="hamburger-menu" class="hamburger"
-        ><i class="fas fa-bars"></i
-      ></label>
+      <label for="hamburger-menu" class="hamburger">
+        <i class="fas fa-bars"></i>
+      </label>
       <input type="checkbox" id="hamburger-menu" />
       <nav>
-        <div class="navigation">
         <ul>
           <li>
-            <a href="index.html"
-              ><i class="fas fa-home"></i
-            ></a>
+            <a href="index.html"><i class="fas fa-home"></i></a>
           </li>
 
-          <li><a  href="about us.html">About us</a></li>
-          <li><a  href="movies.html">Movies</a></li>
+          <li><a href="about us.html">About us</a></li>
+          <li><a href="movies.html">Movies</a></li>
           <li>
-            <a 
-              >Search<i class="fas fa-search"></i
-            ></a>
+            <a>
+              Search
+              <i class="fas fa-search"></i>
+            </a>
           </li>
-        </div>
-        <div class="cta-list">
-          <li><a class="cta active" href="sign in.html">Sign in </a></li>
-          <li><a class="cta" href="join now.html">Join now </a></li>
+
+          <li><a class="cta active" href="sign in.html">Sign in</a></li>
+          <li><a class="cta" href="join now.html">Join now</a></li>
         </ul>
-      </div>
       </nav>
     </header>
     <main>
-      <section class="signin-form">
-        <form action="sign in.php">
-          <h2>Sign in</h2>
-          <label for="e-mail"> </label>
-          <input type="text" name="email" value="e-mail address" />
-          <label for="password"></label>
-          <input type="password" name="password" value="password" />
-          <a class="cta" href="sign in.html">Sign in </a>
-
+      <form action="sign in.php" class="form">
+        <h2>Sign in</h2>
+        <label for="e-mail"></label>
+        <input type="text" name="email" value="e-mail address" class="input" />
+        <label for="password"></label>
+        <input type="password" name="password" value="password" class="input" />
+        <label for="submit"></label>
+        <input type="submit" class="cta" value="Sign in" />
+        <div class="info">
           <p>New to Squqareeyes?</p>
-          <a class="cta" href="join now.html">Join now </a>
-        </form>
-      </section>
+          <a class="cta" href="join now.html">Join now</a>
+        </div>
+      </form>
     </main>
     <footer>&copy; 2021 NoPra all inclusive</footer>
   </body>

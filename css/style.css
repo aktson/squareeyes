@@ -37,13 +37,14 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+input {
   font-family: "josefin", Arial, Helvetica, sans-serif;
-  color: white;
 }
 /*global header and footer */
 header {
-  font-family: "cuprum";
+  font-family: "cuprum", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: white;
   letter-spacing: 2px;
   font-size: 0.9em;
@@ -92,6 +93,8 @@ nav li:hover {
 }
 
 .cta {
+  font-family: "cuprum", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
   background: #d9a407;
   font-weight: bold;
@@ -137,6 +140,80 @@ main {
   text-align: left;
 }
 
+/*homepage */
+.cta-freetrial {
+  text-decoration: none;
+  background: #d9a407;
+  font-weight: bold;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  padding: 8px 24px;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+/* sign in page */
+.form {
+  background-color: white;
+  padding: 16px;
+  color: black;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 25%;
+  height: 350px;
+  border-radius: 8px;
+  align-content: center;
+}
+
+label {
+  display: block;
+  padding: 8px;
+}
+.form h2 {
+  color: #040016;
+  text-align: left;
+}
+.input {
+  display: block;
+  padding: 16px;
+  text-align: left;
+  width: 100%;
+  background-color: #040016;
+  color: white;
+  border-radius: 8px;
+}
+.info p {
+  color: black;
+}
+.info {
+  text-align: right;
+}
+/*join now page*/
+.join {
+  min-width: 50%;
+}
+.plan-container {
+  display: flex;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.pro {
+  font-family: "josefin", Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  height: max-content;
+}
+.pro ul {
+  list-style-type: none;
+  padding: 10px;
+}
+.pro li {
+  padding: 5px;
+}
 @media (max-width: 600px) {
   .hamburger {
     display: grid;
@@ -158,26 +235,7 @@ main {
   main {
     text-align: center;
   }
-
-
-/*homepage */
-.cta-freetrial {
-  text-decoration: none;
-  background: #d9a407;
-  font-weight: bold;
-  border: none;
-  border-radius: 32px;
-  color: white;
-  padding: 8px 24px;
-  letter-spacing: 1px;
-  font-size: 0.9em;
-}
-
-/* sign in page */
-.signin-form {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  border: white 16px solid;
-  color: white;
+  .form {
+    max-width: 50%;
+  }
 }
