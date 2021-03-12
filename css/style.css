@@ -135,7 +135,6 @@ nav li:hover {
 main {
   padding: 20px;
   text-align: left;
-  height: 80vh;
 }
 
 @media (max-width: 600px) {
@@ -150,7 +149,7 @@ main {
     display: none;
   }
   nav ul {
-    padding: 0px;
+    padding: 5px;
     display: grid;
     grid-template-columns: minmax(50px, auto);
     grid-template-rows: max-content;
@@ -158,9 +157,8 @@ main {
   }
   main {
     text-align: center;
-    padding: 50px 20px;
   }
-}
+
 
 /*homepage */
 .cta-freetrial {
