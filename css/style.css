@@ -65,7 +65,7 @@ footer {
   letter-spacing: 2px;
   font-size: 0.9em;
   background-color: #040016;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   padding: 10px;
 }
