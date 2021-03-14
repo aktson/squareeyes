@@ -1,5 +1,3 @@
 {
-    "prettier.htmlWhitespaceSensitivity": "ignore",
-    "prettier.jsxBracketSameLine": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  
 }
