@@ -16,16 +16,27 @@
 }
 html {
   box-sizing: border-box;
-  height: 100%;
+  background-image: url(../images/overlay.png);
+  background: cover no-repeat;
 }
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  background-image: url(../images/overlay.png);
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+   "header"
+   "main"
+   "footer"
+  ;
 }
+header {grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
 *,
 *::before,
 *::after {
@@ -43,7 +54,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  width: 100vw;
+  
 }
 
 header :last-child {
@@ -63,8 +74,8 @@ input {
 
 #logo {
   padding: 5px;
-  max-width: 100px;
-  max-height: 60px;
+  max-width: 16.9em;
+  max-height: 3.8em;
   background-color: aliceblue;
 }
 
@@ -172,6 +183,7 @@ main p {
   height: 350px;
   border-radius: 8px;
   align-content: center;
+  position: relative;
 }
 
 label {
@@ -191,12 +203,21 @@ label {
   color: white;
   border-radius: 8px;
 }
+.info {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+
+  text-align: center;
+}
+
 .info p {
   color: black;
+  font-size: 0.8em;
+  padding-bottom: 10px;
 }
-.info {
-  text-align: right;
-}
+
 /*join now page*/
 .join {
   min-width: 50%;
