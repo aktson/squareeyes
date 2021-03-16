@@ -26,7 +26,7 @@ html {
 body {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
   grid-template-areas:
    "header"
    "main"
@@ -54,6 +54,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
   
 }
 
@@ -75,7 +76,7 @@ input {
 #logo {
   padding: 5px;
   max-width: 16.9em;
-  max-height: 3.8em;
+  max-height: 4em;
   background-color: aliceblue;
 }
 
@@ -151,9 +152,7 @@ footer {
   letter-spacing: 2px;
   font-size: 0.9em;
   background-color: #040016;
-  position: absolute;
-  bottom: 0px;
-  padding: 10px;
+  
 }
 
 /*homepage */
