@@ -54,7 +54,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
+  
   
 }
 
@@ -152,6 +152,7 @@ footer {
   letter-spacing: 2px;
   font-size: 0.9em;
   background-color: #040016;
+  padding: 10px;
   
 }
 
@@ -225,8 +226,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   max-width: 650px;
-  max-height: 350px;
-  margin: 0 auto;
+   margin: 0 auto;
   align-items: center;
 }
 .pro {
@@ -252,7 +252,9 @@ label {
   header {
     display: grid;
     grid-template-columns: 20% 60%;
+   
   }
+  
   nav {
     display: none;
   }
