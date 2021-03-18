@@ -275,9 +275,6 @@ label {
   .hamburger {
     display: block;
   }
-  nav {
-    display: none;
-  }
 
   header {
     display: grid;
