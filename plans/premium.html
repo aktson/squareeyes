@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content=" join now high-quality videos and movies"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Squareeyes | Join now</title>
+    <meta name="description" content="high-quality videos and movies" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Squareeyes | Premium</title>
     <script
       src="https://kit.fontawesome.com/e9fca197f4.js"
       crossorigin="anonymous"
@@ -18,7 +15,11 @@
 
   <body>
     <header>
-      <img id="logo" src="images/SquareEyes_Logo.png" alt="Squqareeyes logo" />
+      <img
+        id="logo"
+        src="../images/SquareEyes_Logo.png"
+        alt="Squareeyes logo"
+      />
       <label for="hamburger-menu" class="hamburger">
         <i class="fas fa-bars"></i>
       </label>
@@ -26,9 +27,10 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html"><i class="fas fa-home"></i></a>
+            <a class="active" href="../index.html">
+              <i class="fas fa-home"></i>
+            </a>
           </li>
-
           <li><a href="about us.html">About us</a></li>
           <li><a href="movies.html">Movies</a></li>
           <li>
@@ -38,44 +40,16 @@
             </a>
           </li>
           <span cta-list>
-            <li><a class="cta" href="sign in.html">Sign in</a></li>
-            <li><a class="cta active" href="join now.html">Join now</a></li>
+            <li><a class="cta" href="../sign in.html in.html">Sign in</a></li>
+            <li><a class="cta" href="../join now.html">Join now</a></li>
           </span>
         </ul>
       </nav>
     </header>
     <main>
       <section class="plan-container">
-        <h1>Choose a plan</h1>
         <div class="pro">
           <h3>Pro</h3>
-          <p><i>Nok 100 pr./ month</i></p>
-          <ul>
-            <li>
-              <i class="fas fa-chevron-circle-right"></i>
-              20GB/week
-            </li>
-            <li>
-              <i class="fas fa-chevron-circle-right"></i>
-              Add your logo
-            </li>
-            <li>
-              <i class="fas fa-chevron-circle-right"></i>
-              4K & HDR support
-            </li>
-            <li>
-              <i class="fas fa-chevron-circle-right"></i>
-              Share videos directly
-            </li>
-            <li>
-              <i class="fas fa-chevron-circle-right"></i>
-              Review and approval
-            </li>
-          </ul>
-        </div>
-
-        <div class="premium">
-          <h3>Premium</h3>
           <p><i>Nok 150 pr./ month</i></p>
           <ul>
             <li>
@@ -84,11 +58,11 @@
             </li>
             <li>
               <i class="fas fa-chevron-circle-right"></i>
-              High-quality films
+              high-quality films
             </li>
             <li>
               <i class="fas fa-chevron-circle-right"></i>
-              Watch offline
+              watch offline
             </li>
             <li>
               <i class="fas fa-chevron-circle-right"></i>
@@ -100,8 +74,35 @@
             </li>
           </ul>
         </div>
+        <form action="../join now.html now.php" class="form join">
+          <h2>Join now</h2>
+          <label for="e-mail"></label>
+          <input
+            type="text"
+            name="email"
+            value="e-mail address"
+            class="input"
+          />
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            value="password"
+            class="input"
+          />
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            value=" Confirm password"
+            class="input"
+          />
+          <label for="submit"></label>
+          <input type="submit" class="cta" value="Join now" />
+        </form>
       </section>
     </main>
+
     <footer>&copy; 2021 NoPra all inclusive</footer>
   </body>
 </html>

@@ -87,8 +87,8 @@ header :last-child {
 }
 
 nav ul {
-  padding: 8px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav li,
@@ -120,8 +120,16 @@ nav li:hover {
 }
 
 .active {
-  color: #f20746;
-  font-size: 1.5em;
+  background-color: #f20746;
+  font-size: 1.2em;
+  border-radius: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.active.cta {
+  background-color: #f20746;
+  color: white;
+  font-size: 1.2em;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -141,7 +149,7 @@ nav li:hover {
   display: none;
 }
 #hamburger-menu:checked ~ nav {
-  display: block;
+  display: none;
 }
 
 footer {
@@ -166,14 +174,14 @@ footer {
   font-size: 0.9em;
 }
 
-.promotion {
+.promotion-home {
   color: white;
   display: grid;
   grid-template-columns: 30% 65%;
   align-items: center;
   justify-content: center;
 }
-.promotion p {
+.promotion-text p {
   line-height: 30px;
   font-weight: 500;
   font-size: 1.5em;
@@ -183,7 +191,7 @@ footer {
   width: 100%;
   margin: 0;
 }
-.promotion_text a {
+.promotion-text a {
   display: block;
   width: 135.56px;
   margin-top: 30px;
@@ -239,13 +247,20 @@ label {
   min-width: 50%;
 }
 .plan-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 650px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 550px;
+  grid-gap: 40px;
   margin: 0 auto;
   align-items: center;
 }
-.pro {
+.plan-container h1 {
+  grid-column: 1 / -1;
+  color: white;
+  text-align: center;
+}
+.pro,
+.premium {
   font-family: "josefin", Arial, Helvetica, sans-serif;
   background-color: white;
   color: black;
@@ -253,13 +268,16 @@ label {
   border-radius: 8px;
   text-align: left;
 }
-.pro ul {
+.pro ul,
+.premium ul {
   list-style-type: none;
   padding: 10px;
 }
-.pro li {
+.pro li,
+.premium li {
   padding: 5px;
 }
+/*media queries mobile and tablet */
 @media (max-width: 670px) {
   .hamburger {
     display: grid;
@@ -293,12 +311,13 @@ label {
     text-align: center;
     padding: 10px;
   }
-  .promotion {
+  .promotion-home {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
   }
-  .promotion_text a {
+  .promotion-text a {
     margin: 30px auto;
   }
 
@@ -316,15 +335,19 @@ label {
     width: 90%;
   }
 }
-@media (max-width: 859px) {
-  .promotion {
+/*media queries medium sized screen */
+@media (min-width: 671px) and (max-width: 859px) {
+  .promotion-home {
     display: grid;
     grid-template-columns: 1fr;
+    align-content: center;
   }
-  .promotion_text p {
+  .promotion-text {
     text-align: center;
+    font-size: 1em;
+    padding: 10px;
   }
-  .promotion_text a {
+  .promotion-text a {
     margin: 20px auto auto auto;
   }
 }
