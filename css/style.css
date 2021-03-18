@@ -88,7 +88,7 @@ header :last-child {
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
+  padding: 8px;
 }
 
 nav li,
@@ -228,18 +228,10 @@ label {
   color: white;
   border-radius: 8px;
 }
-.info {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  padding: 5px;
+.form p {
   text-align: center;
-}
-
-.info p {
-  color: black;
-  font-size: 0.8em;
-  padding-bottom: 10px;
+  color: gray;
+  font-size: 0.9em;
 }
 
 /*join now page*/
@@ -278,17 +270,15 @@ label {
   padding: 5px;
 }
 /*media queries mobile and tablet */
+
 @media (max-width: 670px) {
   .hamburger {
-    display: grid;
+    display: block;
   }
+
   header {
     display: grid;
     grid-template-columns: 20% 60%;
-  }
-
-  nav {
-    display: none;
   }
 
   nav ul {
@@ -298,12 +288,6 @@ label {
 
   nav li,
   header :last-child {
-    text-align: center;
-  }
-  .active {
-    color: #f20746;
-    font-size: 1.2em;
-    letter-spacing: 2px;
     text-align: center;
   }
 
@@ -336,6 +320,7 @@ label {
   }
 }
 /*media queries medium sized screen */
+
 @media (min-width: 671px) and (max-width: 859px) {
   .promotion-home {
     display: grid;
