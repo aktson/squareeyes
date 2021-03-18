@@ -272,6 +272,9 @@ label {
 /*media queries mobile and tablet */
 
 @media (max-width: 670px) {
+  nav {
+    display: hidden;
+  }
   .hamburger {
     display: block;
   }
