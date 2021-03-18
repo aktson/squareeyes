@@ -311,10 +311,12 @@ label {
     gap: 20px;
   }
 
-  .pro {
+  .pro,
+  .premium {
     max-width: 100%;
     margin: 0 auto;
   }
+
   .form {
     width: 90%;
   }
