@@ -227,13 +227,10 @@ footer {
   color: black;
   margin: 0 auto;
   text-align: left;
-  max-width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   border-radius: 8px;
   align-content: center;
-}
-.join {
-  width: 100%;
 }
 
 label {
@@ -261,9 +258,7 @@ label {
 }
 
 /*join now page*/
-.join {
-  width: 100%;
-}
+
 .plan-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -351,16 +346,6 @@ label {
     max-width: max-content;
     margin: 0 auto;
   }
-
-  .form {
-    max-width: 100%;
-  }
-  .join {
-    width: 90%;
-  }
-  .signin {
-    width: 60%;
-  }
 }
 /*media queries medium sized screen */
 
@@ -384,11 +369,5 @@ label {
   }
   .promotion-text a {
     margin: 20px auto auto auto;
-  }
-  .form {
-    width: 100%;
-  }
-  .signin {
-    width: 100%;
   }
 }
