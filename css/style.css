@@ -58,7 +58,6 @@ h6,
 p,
 input {
   font-family: "josefin", Arial, Helvetica, sans-serif;
-  color: white;
 }
 
 /*global header and footer */
@@ -228,7 +227,7 @@ footer {
   color: black;
   margin: 0 auto;
   text-align: left;
-  width: 350px;
+  max-width: 350px;
   height: 300px;
   border-radius: 8px;
   align-content: center;
@@ -359,6 +358,9 @@ label {
   .join {
     width: 60%;
   }
+  .signin {
+    width: 60%;
+  }
 }
 /*media queries medium sized screen */
 
@@ -384,6 +386,9 @@ label {
     margin: 20px auto auto auto;
   }
   .form {
+    width: 100%;
+  }
+  .signin {
     width: 100%;
   }
 }
