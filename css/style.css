@@ -26,7 +26,7 @@ html {
   text-decoration: none;
 }
 body {
-  background-image: url(../images/overlay.png);
+  background-image: url(../images/overlay.jpg);
   background: cover no-repeat;
   min-height: 100vh;
   display: grid;
