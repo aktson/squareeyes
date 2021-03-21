@@ -21,6 +21,7 @@ html {
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 body {
   background-image: url(../images/overlay.png);
@@ -266,7 +267,7 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 550px;
-  grid-gap: 10px;
+  grid-gap: 30px;
   margin: 0 auto;
   align-items: center;
 }
@@ -275,9 +276,7 @@ label {
   color: white;
   text-align: center;
 }
-.plan-container a {
-  text-decoration: none;
-}
+
 .pro,
 .premium {
   font-family: "josefin", Arial, Helvetica, sans-serif;
