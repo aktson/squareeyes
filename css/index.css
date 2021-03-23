@@ -1,0 +1,36 @@
+/*homepage */
+.cta-freetrial {
+  text-decoration: none;
+  background: #d9a407;
+  font-weight: bold;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  padding: 8px 24px;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+.promotion-home {
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.promotion-text p {
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.promotion_img img {
+  width: 100%;
+  margin: 0;
+}
+.promotion-text a {
+  display: block;
+  width: 140px;
+  margin-top: 30px;
+}

@@ -1,0 +1,44 @@
+/*join now page*/
+
+.plan-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 550px;
+  grid-gap: 30px;
+  margin: 0 auto;
+  align-items: center;
+}
+.plan-container h1 {
+  grid-column: 1 / -1;
+  color: white;
+  text-align: center;
+}
+
+.pro,
+.premium {
+  font-family: "josefin", Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  width: 250px;
+}
+.pro h3,
+.premium h3 {
+  padding-bottom: 5px;
+}
+.pro ul,
+.premium ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.pro li,
+.premium li {
+  padding: 8px;
+  text-decoration: none;
+}
+.form:last-child {
+  text-align: center;
+}

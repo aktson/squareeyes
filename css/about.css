@@ -1,0 +1,25 @@
+/* About us page */
+
+.about {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 20px;
+}
+.about-text h1 {
+  padding-bottom: 10px;
+  color: white;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  line-height: 25px;
+  padding: 10px;
+  color: white;
+}
+.about-image img {
+  width: 100%;
+  margin: o;
+}
