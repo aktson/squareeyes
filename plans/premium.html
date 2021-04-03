@@ -9,6 +9,8 @@
       content="join premium to high-quality videos and movies"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/join-now.css" />
+    <link rel="stylesheet" href="../css/media.css" />
     <title>Squareeyes | Join Premium</title>
     <script
       src="https://kit.fontawesome.com/e9fca197f4.js"
@@ -44,19 +46,17 @@
               <i class="fas fa-search"></i>
             </a>
           </li>
-          <span cta-list>
-            <li><a class="cta" href="../sign-in.html ">Sign in</a></li>
-            <li>
-              <a class="cta active" href="../join-now.html">Join now</a>
-            </li>
-          </span>
+          <li cta-list>
+            <a class="cta" href="../sign-in.html ">Sign in</a>
+            <a class="cta active" href="../join-now.html">Join now</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="plan-container">
-        <div class="pro">
-          <h3>Premium</h3>
+        <div class="premium">
+          <h1>Premium</h1>
           <p><i>Nok 150 pr./ month</i></p>
           <ul>
             <li>
@@ -82,7 +82,7 @@
           </ul>
         </div>
         <form action="../join-now.php" class="form join">
-          <h2>Join now</h2>
+          <h1>Join Premium</h1>
           <label for="e-mail"></label>
           <input
             type="text"
@@ -107,7 +107,7 @@
             class="input"
             required
           />
-          <label for="submit"></label>
+
           <input type="submit" class="cta" value="Join now" />
         </form>
       </section>

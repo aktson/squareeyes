@@ -15,7 +15,7 @@ label {
   display: block;
   padding: 8px;
 }
-.form h2 {
+.form h1 {
   color: #040016;
   text-align: left;
 }
@@ -28,7 +28,8 @@ label {
   color: white;
   border-radius: 8px;
 }
-.form p {
+
+.form p a {
   text-align: center;
   color: gray;
   font-size: 0.9em;

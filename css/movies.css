@@ -1,0 +1,45 @@
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  flex: 1;
+  gap: 5px;
+  animation: dropdown 1s forwards;
+  transform: translateX(-1600px);
+  padding: 10px;
+}
+.movies img {
+  width: 100%;
+}
+.movies a {
+  text-decoration: none;
+  color: white;
+}
+.movie :hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateX(-1600px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+.movie:nth-of-type(odd) {
+  transform: translateY(1000px);
+  animation: slideup 1s forwards;
+}
+@keyframes slideup {
+  0% {
+    transform: translatey(1000px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}

@@ -3,7 +3,7 @@
 .plan-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 550px;
+  max-width: 650px;
   grid-gap: 30px;
   margin: 0 auto;
   align-items: center;
@@ -13,20 +13,25 @@
   color: white;
   text-align: center;
 }
-
+.form h1 {
+  color: #040016;
+  text-align: left;
+}
 .pro,
 .premium {
-  font-family: "josefin", Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-  color: black;
+  opacity: 0.8;
+  color: white;
   padding: 20px;
   border-radius: 8px;
   text-align: left;
-  width: 250px;
+  width: 300px;
+  position: relative;
 }
-.pro h3,
-.premium h3 {
+.pro h1,
+.premium h1 {
   padding-bottom: 5px;
+  text-decoration: underline;
+  text-align: left;
 }
 .pro ul,
 .premium ul {
@@ -39,6 +44,42 @@
   padding: 8px;
   text-decoration: none;
 }
-.form:last-child {
-  text-align: center;
+.join .cta {
+  margin-top: 20px;
+}
+.pro:hover,
+.premium:hover {
+  border: 3px solid black;
+  color: white;
+  transition: 1s ease-in;
+  opacity: 0.8;
+}
+.pro {
+  animation: slideleft 1s ease-in-out forwards;
+  transform: translateX(-800px);
+  transition: 1s;
+  background-color: #540e73;
+}
+.premium {
+  animation: slideright 1s ease-in-out forwards;
+  transform: translateX(800px);
+  transition: 1s;
+  background-color: #540e73;
+}
+@keyframes slideleft {
+  0% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideright {
+  0% {
+    transform: translateX(800px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }

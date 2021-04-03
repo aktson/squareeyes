@@ -1,6 +1,7 @@
 /*media queries mobile and tablet */
 
 @media (max-width: 670px) {
+  /*global header and footer */
   nav {
     display: none;
   }
@@ -14,6 +15,7 @@
   header {
     display: grid;
     grid-template-columns: 20% 60%;
+    align-items: flex-start;
   }
 
   nav ul {
@@ -30,6 +32,7 @@
     text-align: center;
     padding: 10px;
   }
+  /* homepage */
   .promotion-home,
   .about {
     display: flex;
@@ -40,7 +43,13 @@
   .promotion-text a {
     margin: 30px auto;
   }
-
+  /* movies page */
+  .movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  /* join now */
   .plan-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -56,6 +65,10 @@
 /*media queries medium sized screen */
 
 @media (min-width: 671px) and (max-width: 859px) {
+  /* homepage */
+  .video-player {
+    margin: auto;
+  }
   .promotion-home,
   .about {
     display: grid;
@@ -65,15 +78,22 @@
   .promotion-text {
     text-align: center;
     font-size: 1em;
-    padding: 10px;
+    padding: 10px 20px;
   }
-
+  .promotion-text a {
+    margin: 20px auto auto auto;
+  }
+  /* about-us page */
   .about-text {
     text-align: center;
     font-size: 1em;
     padding: 10px;
   }
-  .promotion-text a {
-    margin: 20px auto auto auto;
+  /* movies page */
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 5px;
   }
 }
