@@ -1,4 +1,4 @@
-.moives-specific-page {
+.movies-specific-page {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -48,7 +48,7 @@
 
 .movies-sub {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, auto);
   gap: 10px;
   animation: dropdown 1s forwards;
   transform: translateX(-1600px);
