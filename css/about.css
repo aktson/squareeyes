@@ -14,6 +14,7 @@
 .about-text {
   padding: 20px 20px;
   background-color: #040016;
+  border-radius: 16px;
 }
 
 .about-text p {
@@ -21,10 +22,11 @@
   line-height: 25px;
   padding: 5px;
 }
-
+figure {
+  justify-self: center;
+}
 .about-image img {
-  max-width: 80%;
-  margin: o auto;
+  max-width: 70%;
   border-radius: 32px;
   animation: skew 1s ease-in forwards;
 }
