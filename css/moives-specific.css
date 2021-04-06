@@ -12,6 +12,7 @@
   margin: auto;
   animation: skew 1s ease-in forwards;
   transform: scale(0.5);
+  padding: 0px 10px;
 }
 @keyframes skew {
   0% {

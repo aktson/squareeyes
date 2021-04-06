@@ -61,6 +61,37 @@
     max-width: max-content;
     margin: 0 auto;
   }
+
+  /* movie-specific page */
+  .player-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-description {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    text-align: left;
+  }
+  .movie-description a {
+    align-self: flex-start;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+  .movie-description h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .rating {
+    grid-column: 2 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .movies-sub {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
 }
 /*media queries medium sized screen */
 
@@ -95,5 +126,35 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 5px;
+  }
+  /* movie-specific page */
+  .player-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movie-description {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+  }
+  .movie-description a {
+    align-self: flex-start;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+  .movie-description h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .rating {
+    grid-column: 2 / 1;
+    grid-row: 2 / 2;
+  }
+  .movies-sub {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 0 auto;
   }
 }

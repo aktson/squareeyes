@@ -39,7 +39,7 @@
   animation: slide 1s ease-in forwards;
   transform: skew(45deg);
   transition: 1s;
-  max-width: 100%;
+  max-width: 90%;
   padding: 0px 10px;
 }
 @keyframes slide {
