@@ -190,7 +190,7 @@ footer {
 /*global form */
 
 .form {
-  background-color: white;
+  background-color: #d5d5d5;
   padding: 16px;
   color: black;
   margin: 0 auto;
@@ -198,11 +198,8 @@ footer {
   width: 300px;
   height: 350px;
   border-radius: 8px;
-  align-content: center;
-  position: relative;
   transition: 1s;
   animation: zoomin 1s ease-in forwards;
-  opacity: 0;
 }
 @keyframes zoomin {
   0% {
@@ -217,7 +214,6 @@ footer {
 label {
   display: block;
   padding: 8px;
-  position: relative;
 }
 
 .form h1 {
@@ -229,18 +225,19 @@ label {
   padding: 16px;
   text-align: left;
   width: 100%;
-  background-color: #040016;
   border-radius: 8px;
-  position: relative;
-  color: white;
+  color: black;
+  border: transparent;
+  box-shadow: 2px 2px 2px #000000;
 }
 
-.form p {
+.signin a {
   text-align: center;
-  color: black;
+  text-decoration: underline;
   font-size: 0.9em;
-  padding-bottom: 20px;
-  line-height: 30px;
+  padding-bottom: 30px;
+  line-height: 60px;
+  color: black;
 }
 
 .form:last-child {
@@ -252,7 +249,7 @@ label {
 .ccv {
   width: 100%;
 }
-.expiry-ccv {
+.input-half {
   display: flex;
   margin: 15px 0px;
   gap: 10px;
