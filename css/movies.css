@@ -12,10 +12,7 @@
 .movies img {
   width: 100%;
 }
-.movies a {
-  text-decoration: none;
-  color: white;
-}
+
 .movie :hover {
   transition: 1s ease;
   transform: scale(1.1);

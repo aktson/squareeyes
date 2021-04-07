@@ -39,7 +39,7 @@
 .payperview {
   display: inline-block;
   width: 90px;
-  background-color: #540e73;
+  background-color: var(--purple-color);
   color: white;
   padding: 5px 5px;
   text-align: center;

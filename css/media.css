@@ -61,6 +61,11 @@
     max-width: max-content;
     margin: 0 auto;
   }
+  /*about-us page*/
+  .adjectives {
+    display: flex;
+    flex-direction: column;
+  }
 
   /* movie-specific page */
   .player-description {
@@ -125,6 +130,10 @@
     font-size: 1em;
     padding: 10px;
   }
+  .about-image img {
+    max-width: 100%;
+  }
+
   /* movies page */
   .movies {
     display: grid;

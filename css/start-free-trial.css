@@ -11,9 +11,8 @@
 }
 .free-trial-li {
   font-family: "josefin", Arial, Helvetica, sans-serif;
-  background-color: #540e73;
+  background-color: var(--purple-color);
   opacity: 0.8;
-  color: white;
   padding: 20px;
   border-radius: 8px;
   text-align: left;

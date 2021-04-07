@@ -1,14 +1,11 @@
 /*global styling */
 
-/* color pallet 
-#F20746 : red
-#540E73 :purple
-#D9A407 : dark yellow
-#040016 : purple black 
-#736f31: dark brown 
-#a69f16: light brown
-#090909 : (rgb 9 ,9 ,9, 75%)*/
-
+:root {
+  --yellow-color: #d9a407;
+  --red-color: #f20746;
+  --purple-color: #540e73;
+  --purpleblack-color: #040016;
+}
 @font-face {
   font-family: "josefin";
   src: url("../fonts/josefin.ttf") format("truetype");
@@ -75,7 +72,7 @@ header {
   font-size: 0.9rem;
   display: flex;
   align-items: center;
-  background-color: #040016;
+  background-color: var(--purpleblack-color);
   flex-wrap: nowrap;
 }
 
@@ -101,7 +98,6 @@ nav li,
 nav a {
   display: inline-block;
   text-decoration: none;
-  color: white;
   padding: 10px;
   font-size: 1rem;
 }
@@ -139,7 +135,7 @@ nav li:nth-child(odd) {
   font-family: "cuprum", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
-  background: #d9a407;
+  background: var(--yellow-color);
   border: none;
   border-radius: 8px;
   color: #040016;
@@ -150,13 +146,13 @@ nav li:nth-child(odd) {
 }
 
 .active {
-  background-color: #f20746;
+  background-color: var(--red-color);
   border-radius: 8px;
   letter-spacing: 2px;
   text-align: center;
 }
 .active.cta {
-  background-color: #f20746;
+  background-color: var(--red-color);
   letter-spacing: 2px;
   color: aliceblue;
 }
@@ -185,14 +181,13 @@ footer {
   letter-spacing: 1px;
   font-size: 0.9rem;
   padding: 10px;
-  background-color: #040016;
+  background-color: var(--purpleblack-color);
 }
 /*global form */
 
 .form {
-  background-color: #d5d5d5;
+  background-color: #2b2b35;
   padding: 16px;
-  color: black;
   margin: 0 auto;
   text-align: left;
   width: 300px;
@@ -216,28 +211,26 @@ label {
   padding: 8px;
 }
 
-.form h1 {
-  color: #040016;
-  text-align: left;
-}
 .input {
   display: block;
   padding: 16px;
   text-align: left;
   width: 100%;
   border-radius: 8px;
-  color: black;
+  color: white;
   border: transparent;
   box-shadow: 2px 2px 2px #000000;
+  background-color: rgba(238, 238, 238, 0.15);
 }
-
+::placeholder {
+  color: white;
+}
 .signin a {
   text-align: center;
   text-decoration: underline;
   font-size: 0.9em;
   padding-bottom: 30px;
   line-height: 60px;
-  color: black;
 }
 
 .form:last-child {
@@ -245,10 +238,6 @@ label {
 }
 /*payment */
 
-.expiry,
-.ccv {
-  width: 100%;
-}
 .input-half {
   display: flex;
   margin: 15px 0px;
@@ -260,8 +249,10 @@ label {
   line-height: 10px;
 }
 .payment img {
-  width: 50%;
-  padding-bottom: 15px;
+  width: 40%;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: white;
 }
 .rating {
   max-width: 3rem;

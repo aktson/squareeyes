@@ -10,17 +10,11 @@
 }
 .plan-container h1 {
   grid-column: 1 / -1;
-  color: white;
   text-align: center;
 }
-.form h1 {
-  color: #040016;
-  text-align: left;
-}
+
 .pro,
 .premium {
-  opacity: 0.8;
-  color: white;
   padding: 20px;
   border-radius: 8px;
   text-align: left;
@@ -49,37 +43,42 @@
 }
 .pro:hover,
 .premium:hover {
-  border: 3px solid black;
-  color: white;
-  transition: 1s ease-in;
+  border: 3px solid var(--purpleblack-color);
+  transition: 0.5s ease-in;
   opacity: 0.8;
 }
 .pro {
   animation: slideleft 1s ease-in-out forwards;
-  transform: translateX(-800px);
+  transform: translateX(-300px);
+  opacity: 0;
   transition: 1s;
-  background-color: #540e73;
+  background-color: var(--purple-color);
 }
 .premium {
   animation: slideright 1s ease-in-out forwards;
-  transform: translateX(800px);
+  transform: translateX(300px);
   transition: 1s;
-  background-color: #540e73;
+  background-color: var(--purple-color);
+  opacity: 0;
 }
 @keyframes slideleft {
   0% {
-    transform: translateX(-800px);
+    transform: translateX(-300px);
+    opacity: 0;
   }
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
 @keyframes slideright {
   0% {
-    transform: translateX(800px);
+    transform: translateX(300px);
+    opacity: 0;
   }
 
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
