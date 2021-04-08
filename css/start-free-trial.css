@@ -20,11 +20,12 @@
   position: relative;
   margin: 0 auto;
   animation: skewin 1s forwards;
-  transform: skew(90deg);
+  transform: skew(45deg);
+  transition: 1s ease-out;
 }
 @keyframes skewin {
   0% {
-    transform: skew(90deg);
+    transform: skew(45deg);
   }
   100% {
     transform: skew(0deg);
