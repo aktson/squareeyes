@@ -29,6 +29,9 @@
   max-width: 100%;
   margin: auto;
   background-color: var(--purpleblack-color);
+  border-radius: 16px;
+  border-right: var(--yellow-color) 3px solid;
+  border-top: var(--red-color) 3px solid;
 }
 
 figure {
@@ -46,10 +49,12 @@ figure {
   margin: 0 auto;
 }
 .adjvective-content {
-  max-width: 160px;
+  width: 160px;
   border-radius: 50%;
-  padding: 40px;
+  padding: 30px;
   background: var(--red-color);
+  font-size: 2rem;
+  font-weight: 500;
   line-height: 30px;
   text-align: center;
   text-transform: capitalize;
