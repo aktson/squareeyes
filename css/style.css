@@ -135,7 +135,6 @@ nav li:nth-child(odd) {
   }
 }
 .cta {
-  text-decoration: none;
   background: var(--yellow-color);
   border: none;
   border-radius: 8px;
@@ -224,6 +223,7 @@ label {
 ::placeholder {
   color: white;
 }
+
 .signin a {
   text-align: center;
   text-decoration: underline;

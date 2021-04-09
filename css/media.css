@@ -105,6 +105,7 @@
 /*media queries medium sized screen */
 
 @media (min-width: 671px) and (max-width: 859px) {
+  
   /* homepage */
   .video-player {
     margin: auto;
@@ -125,6 +126,7 @@
     margin: 20px auto auto auto;
   }
   /* about-us page */
+  
   .about-text {
     text-align: center;
     font-size: 1em;
@@ -146,7 +148,6 @@
     display: flex;
     flex-direction: column;
   }
-
   .movie-description {
     display: grid;
     grid-template-rows: repeat(2, auto);
