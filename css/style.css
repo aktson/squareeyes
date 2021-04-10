@@ -192,7 +192,7 @@ footer {
   height: 350px;
   border-radius: 8px;
   transition: 1s;
-  animation: zoomin 1s ease-in forwards;
+  animation: zoomin 1s linear forwards;
 }
 @keyframes zoomin {
   0% {
