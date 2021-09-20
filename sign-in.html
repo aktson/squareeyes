@@ -4,17 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content=" sign in to squareeyes for high-quality videos and movies"
-    />
+    <meta name="description" content=" sign in to squareeyes for high-quality videos and movies" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <title>Squareeyes | Sign in</title>
-    <script
-      src="https://kit.fontawesome.com/e9fca197f4.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/e9fca197f4.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://squareeyesnet.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2608346, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
@@ -50,19 +60,9 @@
         <form action="sign-in.php">
           <h1>Sign in</h1>
           <label for="e-mail"></label>
-          <input
-            type="text"
-            name="email"
-            placeholder="e-mail address"
-            class="input"
-          />
+          <input type="text" name="email" placeholder="e-mail address" class="input" />
           <label for="password"></label>
-          <input
-            type="password"
-            name="password"
-            placeholder="password"
-            class="input"
-          />
+          <input type="password" name="password" placeholder="password" class="input" />
           <p><a href="#">forget password?</a></p>
           <input type="submit" class="cta" value="Sign in" />
         </form>

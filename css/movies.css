@@ -4,17 +4,18 @@
   justify-content: center;
   max-width: 100%;
   flex: 1;
-  gap: 5px;
+  gap: 20px;
   animation: dropdown 1s forwards;
   transform: translateX(-1600px);
   padding: 10px;
+  transition: 0.5s transform;
 }
 .movies img {
   width: 100%;
+  transition: 0.5s transform;
 }
 
 .movie :hover {
-  transition: 1s ease;
   transform: scale(1.1);
 }
 
