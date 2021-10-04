@@ -56,17 +56,23 @@
     </header>
     <main class="">
       <div class="form payment">
-        <form action="pay.php">
-          <p>We accept</p>
+        <form>
+          <p id="msg-container"></p>
+          <h2>We accept</h2>
           <img src="images/payment method.png" alt="card-catogary" />
           <p>Card details</p>
+          <input type="text" name="name" placeholder="name on card" class="input" id="name" />
+          <label for="name">
+            <span id="name-span" class="all-span"></span>
+          </label>
 
-          <input type="text" name="card-name" placeholder="name on card" class="input" />
-          <label for="cardnumber"></label>
-          <input type="text" name="cardnumber" placeholder="card number XXXXXXX" class="input" />
+          <input type="number" name="card-number" placeholder="card number XXXXXXX" class="input" id="card-number" />
+          <label for="card-number"><span id="card-span" class="all-span"></span></label>
           <div class="input-half">
-            <input type="text" name="expiry" placeholder="MM/YY" class="input expiry" />
-            <input type="numbers" name="ccv" placeholder="CCV" class="input ccv" />
+            <input type="number" name="expiry" placeholder="MM/YY" class="input expiry" />
+            <label for="expiry"><span id="expiry-span" class="all-span"></span></label>
+            <input type="number" name="ccv" placeholder="CCV" class="input ccv" id="ccv" />
+            <label for="ccv"><span id="ccv-span" class="all-span"></span></label>
           </div>
           <input type="submit" class="cta" value="Pay" />
         </form>

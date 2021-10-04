@@ -36,17 +36,17 @@
 
 .video-player {
   animation: slide 1s ease-in forwards;
-  transform: skew(45deg);
-  transition: 1s;
+  opacity: 0;
+  transition: 1s ease-in;
   max-width: 90%;
   padding: 0px 10px;
 }
 @keyframes slide {
   0% {
-    transform: skew(45deg);
+    opacity: 0;
   }
 
   100% {
-    transform: skew(0deg);
+    opacity: 1;
   }
 }
