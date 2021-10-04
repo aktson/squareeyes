@@ -14,7 +14,7 @@
 
   header {
     display: grid;
-    grid-template-columns: 20% 60%;
+    grid-template-columns: 10% 90%;
     align-items: flex-start;
   }
 
@@ -23,8 +23,7 @@
     grid-template-columns: 1fr;
   }
 
-  nav li,
-  header :last-child {
+  nav li {
     text-align: center;
   }
 
@@ -105,7 +104,6 @@
 /*media queries medium sized screen */
 
 @media (min-width: 671px) and (max-width: 859px) {
-  
   /* homepage */
   .video-player {
     margin: auto;
@@ -126,7 +124,7 @@
     margin: 20px auto auto auto;
   }
   /* about-us page */
-  
+
   .about-text {
     text-align: center;
     font-size: 1em;

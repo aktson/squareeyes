@@ -48,26 +48,33 @@
               <i class="fas fa-search"></i>
             </a>
           </li>
-          <li class="cta-list">
-            <a class="cta active" href="sign-in.html">Sign in</a>
-            <a class="cta" href="join-now.html">Join now</a>
-          </li>
+          <li><a class="cta active" href="sign-in.html">Sign in</a></li>
+          <li><a class="cta" href="join-now.html">Join now</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="form signin">
-        <form action="sign-in.php">
+        <form>
+          <p id="msg-container"></p>
           <h1>Sign in</h1>
-          <label for="e-mail"></label>
-          <input type="text" name="email" placeholder="e-mail address" class="input" />
-          <label for="password"></label>
-          <input type="password" name="password" placeholder="password" class="input" />
+
+          <input type="text" name="email" placeholder="e-mail address" class="input" id="email" />
+          <label for="email">
+            <span id="email-span" class="all-span"></span>
+          </label>
+
+          <input type="password" name="password" placeholder="password " class="input" id="password" />
+          <label for="email">
+            <span id="password-span" class="all-span"></span>
+          </label>
           <p><a href="#">forget password?</a></p>
           <input type="submit" class="cta" value="Sign in" />
         </form>
       </div>
     </main>
     <footer>&copy; 2021 SquareEyes, Inc. All Rights Reserved.</footer>
+    <script src="js/general-function.js"></script>
+    <script src="js/sign-in.js"></script>
   </body>
 </html>

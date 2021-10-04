@@ -76,12 +76,7 @@ header {
   align-items: center;
   background-color: var(--purpleblack-color);
   flex-wrap: nowrap;
-}
-
-header :last-child {
-  flex: 1 0 auto;
-  text-align: right;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #logo {
@@ -92,7 +87,7 @@ header :last-child {
 }
 nav ul {
   display: flex;
-  flex: 1;
+
   padding-right: 6px;
 }
 
@@ -185,15 +180,16 @@ footer {
 /*global form */
 
 .form {
+  display: flex;
+  flex-direction: column;
   background-color: #2b2b35;
   padding: 16px;
   margin: 0 auto;
-  text-align: left;
-  width: 350px;
-  height: 350px;
+  max-width: 400px;
   border-radius: 8px;
   transition: 1s ease;
   animation: zoomin 1s linear forwards;
+  position: relative;
 }
 @keyframes zoomin {
   0% {
@@ -204,10 +200,52 @@ footer {
     opacity: 1;
   }
 }
-
+form h1 {
+  margin: 30px 0px;
+}
 label {
   display: block;
-  padding: 8px;
+  position: relative;
+}
+
+/* error and success message + msg for successful form submition */
+.success-msg {
+  background: green;
+  padding: 10px;
+  border-radius: 8px;
+}
+.error {
+  background-color: var(--red-color);
+
+  background: rgba(242, 7, 70, 0.7);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.success {
+  width: 0%;
+  background: green;
+  left: 0px;
+  top: 0px;
+  transition: 1s width;
+  animation: expandLine 0.6s linear forwards;
+}
+@keyframes expandLine {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.all-span {
+  display: inline-block;
+  text-align: left;
+  padding: 4px;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  font-family: "cuprum", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .input {
@@ -215,16 +253,17 @@ label {
   padding: 16px;
   text-align: left;
   width: 100%;
-  border-radius: 8px;
   color: white;
   border: transparent;
   box-shadow: 2px 2px 2px #000000;
   background-color: rgba(238, 238, 238, 0.15);
+  font-size: 1em;
 }
+
 ::placeholder {
   color: white;
 }
-
+/* form sign in  */
 .signin a {
   text-align: center;
   text-decoration: underline;
@@ -235,6 +274,11 @@ label {
 
 .form:last-child {
   text-align: center;
+}
+
+/* form join */
+form.join {
+  width: 500px;
 }
 /*payment */
 
