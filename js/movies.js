@@ -8,12 +8,11 @@ for (let i= 0; i< moviesArray.length; i++) {
     
     moviesContainer.innerHTML += `
     <div class="movie">
-  
+    <a href="movies/${moviesArray[i].link}.html">
     <img src= "${moviesArray[i].imageMedium}" alt= "${moviesArray[i].name}">
     <p>${moviesArray[i].name}</p>
     <img src = "${moviesArray[i].rating}" class="rating">
-
-
+    </a>
  
   </div>`
 console.log(moviesArray[i].image)
