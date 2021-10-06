@@ -71,7 +71,8 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aperiam incidunt ullam animi quidem hic non perferendis maxime
             voluptatibus aliquid. Pariatur, perspiciatis dolorum. Natus explicabo facere, enim delectus reprehenderit amet.
           </p>
-          <a href="../payment.html" class="cta payperview">Watch for NOK 100</a>
+          <!-- <a href="../payment.html" class="cta payperview">Watch for NOK 100</a> -->
+          <button class="cta payperview">Watch for 100nok</button>
         </div>
       </section>
       <section class="movies-sub">
@@ -111,8 +112,46 @@
           </a>
         </div>
       </section>
+      
+      <!-- overlay of payment modal  with result from clicked movie-->
+      <div class="overlay hidden ">
+        <i class="fas fa-times close-modal"></i>
+            <div class="form payment">
+              <!-- result container for clicked movie -->
+              <div class="result-container"> 
+                 <!-- <a href="../movies/sleeping beauty.html">
+                <img src="../images/sm-mov-img/sleeping-beauty-2021-sm.png" alt="sleeping beauty 2021" />
+                <p>Sleeping beauty 2021</p>
+                <img src="../images/ratings.png" alt="ratings" class="rating" />
+              </a> -->
+            </div>
+               <!--form for payment   -->
+               <form  >
+                <p id="msg-container"></p>
+                <h2>We accept</h2>
+                <img src="../images/payment method.png" alt="card-catogary" />
+      
+                <input type="text" name="name" placeholder="name on card" class="input" id="name" />
+                <label for="name">
+                  <span id="name-span" class="all-span"></span>
+                </label>
+                <input type="number" name="card-number" placeholder="card number XXXXXXX" class="input" id="card-number" />
+                <label for="card-number"><span id="card-span" class="all-span"></span></label>
+                <div class="input-half">
+                  <input type="number" name="expiry" placeholder="MM/YY" id="expiry" class="input expiry" />
+                  <label for="expiry"><span id="expiry-span" class="all-span"></span></label>
+                  <input type="number" name="ccv" placeholder="CCV" class="input ccv" id="ccv" />
+                  <label for="ccv"><span id="ccv-span" class="all-span"></span></label>
+                </div>
+                <input type="submit" class="cta" value="Pay" />
+              </form>
+           
+            </div>
     </main>
 
     <footer>&copy; 2021 SquareEyes, Inc. All Rights Reserved.</footer>
+ 
+    <script src="../js/general-function.js"></script>
+    <script src="../js/movie-specific.js" type="module"></script>
   </body>
 </html>
