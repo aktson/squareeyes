@@ -42,38 +42,3 @@ figure {
 .about-image img {
   max-width: 100%;
 }
-
-.adjectives {
-  max-width: 1000px;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-.adjvective-content {
-  width: 160px;
-  border-radius: 50%;
-  padding: 30px;
-  background: var(--yellow-color);
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 30px;
-  text-align: center;
-  text-transform: capitalize;
-  animation: slideleft 1s forwards;
-  transform: translateX(-350px);
-}
-@keyframes slideleft {
-  0% {
-    transform: translateX(-350px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-.adjvective-content:first-child {
-  background: var(--purple-color);
-}
-.adjvective-content:nth-of-type(even) {
-  background-color: var(--red-color);
-}

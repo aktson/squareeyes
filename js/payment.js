@@ -10,14 +10,9 @@ const movieId = params.get("id");
 
 
 const movie = moviesArray.find(  id  => id === id);
+console.log(movie)
 
 createHtml(movie)
-
-
-// moviesArray.forEach(function(movie) {
-//     createHtml(movie)
-// })
-
 
 //function to create html
 function createHtml(data) {

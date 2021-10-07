@@ -1,29 +1,107 @@
 /*homepage */
+.index-main {
+  display: flex;
+  flex-direction: column;
+}
 
+.banner {
+  background: url(../images/banner-home.jpg) center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 50px;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content {
+  max-width: 500px;
+  animation: 1s slide-right forwards;
+  transform: translatey(-150px);
+  opacity: 0;
+  transition: transform 1s;
+  background-color: var(--yellow-color);
+  padding: 50px;
+  color: black;
+  font-family: "cuprum", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+@keyframes slide-right {
+  0% {
+    transform: translatey(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+
+.banner p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  padding: 10px 0;
+}
+
+/* adjective section */
+.adjectives {
+  max-width: 1000px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.adjvective-content {
+  width: 160px;
+  border-radius: 50%;
+  padding: 30px;
+  background: var(--yellow-color);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  animation: slideleft 1s forwards;
+  transform: translateX(-350px);
+}
+@keyframes slideleft {
+  0% {
+    transform: translateX(-350px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.adjvective-content:first-child {
+  background: var(--purple-color);
+}
+.adjvective-content:nth-of-type(even) {
+  background-color: var(--red-color);
+}
 .promotion-home {
+  max-width: 1000px;
   display: grid;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin: 80px auto;
 }
-
-.promotion-text p {
+.promotion-home img {
+  max-width: 100%;
+}
+.promotion-text h2 {
   line-height: 2rem;
   font-weight: 500;
-  font-size: 1.5rem;
-  animation: slideright 1s forwards;
-  transform: translatex(-700px);
+  font-size: 2em;
+  border-bottom: 2px solid var(--red-color);
 }
-@keyframes slideright {
-  0% {
-    transform: translatex(-700px);
-  }
-  100% {
-    transform: translatex(0px);
-  }
+.promotion-text p {
+  font-size: 1.2em;
+  line-height: 2em;
 }
-
 .free-trial {
   display: block;
   width: 140px;
@@ -36,17 +114,32 @@
 
 .video-player {
   animation: slide 1s ease-in forwards;
-  opacity: 0;
   transition: 1s ease-in;
-  max-width: 90%;
+  max-width: 100%;
   padding: 0px 10px;
 }
-@keyframes slide {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
+/* pro */
+.pro-container {
+  justify-content: center;
+  background: url(../images/adj-section.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.pro {
+  max-width: 500px;
+  display: flex;
+  margin: 0 auto;
+  font-size: 2em;
+
+  justify-content: center;
+  align-items: center;
+  background-color: var(--section-bg);
+}
+.pro li {
 }

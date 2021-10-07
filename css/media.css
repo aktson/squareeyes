@@ -30,6 +30,10 @@
     padding: 10px;
   }
   /* homepage */
+  .banner {
+
+    height: 40vh;
+  }
   .promotion-home,
   .about {
     display: flex;
@@ -115,6 +119,9 @@
   /* homepage */
   .video-player {
     margin: auto;
+  }
+  .banner {
+    height: 60vh;
   }
   .promotion-home,
   .about {
