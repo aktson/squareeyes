@@ -1,32 +1,17 @@
-//global nvaigation click event
 
-const hamburger = document.querySelector(".hamburger");
+
+const hamburger = document.querySelector(".fa-bars");
 const navigation = document.querySelector("nav");
 const logo = document.querySelector ("#logo");
 
-// hamburger.addEventListener ("click", toggleNav) 
 
-
-// //togglenav function to display nav onclick
-// function toggleNav(e) {
-//     if (navigation.style.display === "block") {
-//         return navigation.style.display = "none";
-//     }
-//     return navigation.style.display = "block";
-
-
-// }
+//global hamburger/bars click event
 hamburger.onclick = function expandNav (e) {
-    console.log(e.target)
-    if (navigation.style.display === "none") {
-        return navigation.style.display = "block";
+    if (navigation.style.display === "block") {
+        return navigation.style.display = "none";
     }
-    return navigation.style.display = "none";
+    return navigation.style.display = "block";
 }
-
-  
-
-
 
 //function to show error or success message
 function showMsg(input, msg) {

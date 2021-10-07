@@ -155,20 +155,14 @@ nav li:nth-child(odd) {
   cursor: default;
 }
 
-.hamburger {
+.fa-bars {
   position: absolute;
   right: 20px;
   top: 20px;
-  display: none;
   padding: 10px;
-}
-
-#hamburger-menu {
   display: none;
+  z-index: 10;
 }
-/* #hamburger-menu:checked ~ nav {
-  display: none;
-} */
 
 footer {
   max-width: 100vw;

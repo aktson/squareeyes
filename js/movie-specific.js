@@ -19,10 +19,8 @@ function closePaymentModal() {
 function getToPayment(e) {
 
     const html = payPerViewBtn.parentElement.innerHTML
-    // console.log(html)
-
+    const h1 = document.querySelector("h1");
     resultContainer.innerHTML = html;
-    
     overlay.classList.remove ("hidden");
 }
 
