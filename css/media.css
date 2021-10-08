@@ -52,6 +52,9 @@
     gap: 10px;
     flex-wrap: wrap;
     margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .adjvective-content {
     width: 80px;
