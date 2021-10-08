@@ -6,7 +6,7 @@
   --purple-color: #540e73;
   --purpleblack-color: #040016;
   --darkgray-color: #2b2b35;
-  --section-bg: #26282d;
+  --success: #57d952;
 }
 @font-face {
   font-family: "josefin";
@@ -42,9 +42,9 @@ body {
     "header"
     "main"
     "footer";
-
   color: white;
   overflow-x: hidden;
+  position: relative;
 }
 header {
   grid-area: header;
@@ -71,9 +71,13 @@ header {
   font-size: 0.9rem;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--red-color);
+  box-shadow: 8px 8px 8px var(--darkgray-color);
   flex-wrap: nowrap;
   justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+  z-index: 20;
+  background-color: var(--purpleblack-color);
 }
 
 #logo {
@@ -101,6 +105,7 @@ nav a {
   outline: none;
   background: none;
   border: 2px solid white;
+  color: white;
 }
 
 nav a:hover {
@@ -159,12 +164,11 @@ nav li:nth-child(odd) {
 .active:hover {
   cursor: default;
 }
-
-.fa-bars {
+.hamburger {
   position: absolute;
   right: 20px;
   top: 20px;
-  padding: 10px;
+  padding: 5px;
   z-index: 10;
   display: none;
 }
@@ -175,6 +179,15 @@ footer {
   font-size: 0.9rem;
   padding: 10px;
   background-color: var(--purpleblack-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid var(--darkgray-color);
+}
+.social-icons {
+  font-size: 1.4em;
+  margin: 10px auto;
 }
 /*global form */
 
@@ -209,20 +222,19 @@ label {
 
 /* error and success message + msg for successful form submition */
 .success-msg {
-  background: green;
+  background: var(--success);
   padding: 10px;
   border-radius: 8px;
+  color: #000;
 }
 .error {
-  background-color: var(--red-color);
-
   background: rgba(242, 7, 70, 0.7);
   margin-bottom: 20px;
   width: 100%;
 }
 .success {
   width: 0%;
-  background: green;
+  background: var(--success);
   left: 0px;
   top: 0px;
   transition: 1s width;
@@ -292,7 +304,7 @@ form.join {
   margin-bottom: 10px;
   line-height: 10px;
 }
-.payment img {
+.cards-img {
   width: 40%;
   padding: 5px;
   margin-bottom: 20px;
@@ -301,9 +313,8 @@ form.join {
 .rating {
   max-width: 3rem;
 }
-.show-nav {
-  display: block;
-}
+
+/* result container and payment */
 .payment {
   max-width: 650px;
   display: grid;
@@ -312,6 +323,7 @@ form.join {
   gap: 20px;
   align-items: center;
 }
+
 .result-container {
   border: 2px solid var(--red-color);
   padding: 16px 10px;
@@ -351,7 +363,7 @@ form.join {
   left: 0%;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
   display: flex;

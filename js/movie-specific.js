@@ -18,9 +18,8 @@ function closePaymentModal() {
 //open overlay with payment and closemodal
 function getToPayment(e) {
 
-    const html = payPerViewBtn.parentElement.innerHTML
-    const h1 = document.querySelector("h1");
-    resultContainer.innerHTML = html;
+    const parentHTML = payPerViewBtn.parentElement.innerHTML
+    resultContainer.innerHTML = parentHTML;
     overlay.classList.remove ("hidden");
 }
 

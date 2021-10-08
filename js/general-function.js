@@ -1,6 +1,6 @@
 
 
-const hamburger = document.querySelector(".fa-bars");
+const hamburger = document.querySelector(".hamburger");
 const navigation = document.querySelector("nav");
 const logo = document.querySelector ("#logo");
 

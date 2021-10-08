@@ -5,8 +5,8 @@
   nav {
     display: none;
   }
-  .fa-bars {
-display: block;
+  .hamburger {
+    display: grid;
   }
 
   header {
@@ -30,8 +30,10 @@ display: block;
   }
   /* homepage */
   .banner {
-
     height: 40vh;
+  }
+  .parallax {
+    min-height: 30vh;
   }
   .promotion-home,
   .about {
@@ -39,9 +41,28 @@ display: block;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    padding: 10px;
   }
   .promotion-text a {
     margin: 30px auto;
+  }
+  .adjectives {
+    max-width: 300px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .adjvective-content {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   /* movies page */
   .movies {
@@ -55,9 +76,9 @@ display: block;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-.join {
-  max-width: 350px;
-}
+  .join {
+    max-width: 350px;
+  }
   .pro,
   .premium {
     max-width: max-content;
@@ -105,12 +126,15 @@ display: block;
   }
   /* overlay  */
   .payment {
-    
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     justify-content: center;
     gap: 20px;
     align-items: center;
+  }
+  .overlay {
+    align-items: flex-start;
+  }
 }
 /*media queries medium sized screen */
 
@@ -121,6 +145,10 @@ display: block;
   }
   .banner {
     height: 60vh;
+  }
+  .adjectives {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .promotion-home,
   .about {
@@ -163,7 +191,6 @@ display: block;
   .movie-description {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, auto);
   }
   .movie-description a {
     align-self: flex-start;
@@ -183,5 +210,17 @@ display: block;
     display: grid;
     grid-template-columns: repeat(2, auto);
     margin: 0 auto;
+  }
+
+  /* movie specific overlay */
+  .overlay {
+    justify-content: center;
+    align-items: top;
+  }
+}
+@media (min-width: 671px) and (max-width: 769px) {
+  header {
+    display: flex;
+    flex-direction: column;
   }
 }
