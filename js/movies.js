@@ -10,8 +10,8 @@ for (let i= 0; i< moviesArray.length; i++) {
     <div class="movie">
     <a href="movies/${moviesArray[i].link}.html">
     <img src= "${moviesArray[i].imageMedium}" alt= "${moviesArray[i].name}">
-    <p>${moviesArray[i].name}</p>
-    <img src = "${moviesArray[i].rating}" class="rating">
+    <h2>${moviesArray[i].name}</h2>
+    <img src = "${moviesArray[i].rating}" class="rating" alt="ratings">
     </a>
  
   </div>`

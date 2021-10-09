@@ -109,7 +109,7 @@ nav a {
 }
 
 nav a:hover {
-  transform: scale(1.1);
+  background-color: var(--red-color);
 }
 nav li:nth-child(even) {
   animation: drop 0.5s forwards;
@@ -343,7 +343,7 @@ form.join {
 
 .close-modal {
   position: absolute;
-  top: 1.2rem;
+  top: 2rem;
   right: 2rem;
   font-size: 2rem;
   color: white;

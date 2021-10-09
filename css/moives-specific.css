@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 20px;
   justify-self: center;
+  margin-top: 90px;
 }
 .player-description {
   display: grid;

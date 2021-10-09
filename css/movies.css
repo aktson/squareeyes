@@ -9,6 +9,7 @@
   transform: translateX(-1600px);
   padding: 10px;
   transition: 0.5s transform;
+  margin-top: 80px;
 }
 .movies img {
   width: 100%;
@@ -17,6 +18,9 @@
 
 .movie :hover {
   transform: scale(1.1);
+}
+.movies h2 {
+  line-height: 1.2em;
 }
 
 @keyframes dropdown {
