@@ -198,8 +198,8 @@ footer {
   margin: 80px auto;
   max-width: 400px;
   border-radius: 8px;
-  transition: 1s ease;
-  animation: zoomin 1s linear forwards;
+  transition: 0.5s ease;
+  animation: zoomin 0.2s linear forwards;
 }
 @keyframes zoomin {
   0% {
@@ -370,4 +370,33 @@ form.join {
 }
 .hidden {
   display: none;
+}
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--purpleblack-color);
+  z-index: 99;
+}
+
+.spinner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--red-color);
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-top: 3px solid white;
+  animation: 1s spin infinite ease-in;
+
+  /* display: none; */
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

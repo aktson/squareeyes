@@ -14,8 +14,9 @@ const lastNameSpan = document.querySelector("#last-name-span");
 const msgContainer = document.querySelector("#msg-container");
 const form = document.querySelector("form");
 
-console.log(firstNameSpan);
 
+const spinner = document.querySelector(".spinner");
+console.log(spinner);
 form.addEventListener("submit", checkInputData);
 
 function checkInputData(e) {
@@ -31,5 +32,6 @@ e.preventDefault();
         msgContainer.classList.add("success-msg");
         showMsg(msgContainer, "Thank you for Joining SquareEyes!!");
         form.reset();
+        removeMsg()
     }
 }

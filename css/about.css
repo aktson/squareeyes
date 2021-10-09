@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 20px;
   align-self: center;
+  margin-top: 80px;
 }
 .about {
   max-width: 1000px;

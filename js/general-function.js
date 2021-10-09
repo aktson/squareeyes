@@ -45,3 +45,17 @@ function checkLength (input, len) {
     showMsg(input, `${input} can not be less than ${len}`)
     }
 }
+
+//on page load spinner function
+const wrapper = document.querySelector(".wrapper");
+const body = document.querySelector("body");
+
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        body.style.visibility = "hidden";
+        wrapper.style.visibility = "visible";
+    } else {
+        wrapper.style.display = "none";
+        body.style.visibility = "visible";
+    }
+}
