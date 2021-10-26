@@ -56,12 +56,15 @@ getMovie(baseUrl)
 
 //function to create html
 function createHtml(movie) {
+  const payButton = document.querySelector(".pay");
+  payButton.value = `Make payment NOK${movie.prices.price}`
+
     resultContainer.innerHTML = `
       <div>
         <img src="${movie.images[1].src}" />
         <h3>${movie.name}</h3>
         <img src = "${movie.images[3].src}" class="rating" alt="ratings"/>
         <p>${movie.description}</p>
-        <p>NOK ${movie.prices.price}</p>
+        <p class="result">NOK ${movie.prices.price}</p>
       </div>`
 }

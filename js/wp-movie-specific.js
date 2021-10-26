@@ -43,6 +43,7 @@ function createSubHtml (movies) {
     <a href="movie-specific.html?id=${movies[i].id}">
     <img src="${movies[i].images[1].src}" alt="${movies[i].name}" />
     <p>${movies[i].name}</p>
+    <img src="${movies[i].images[3].src}" alt="ratings" class="rating"/>
     </a>
     </div>`
 

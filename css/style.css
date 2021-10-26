@@ -313,18 +313,7 @@ form.join {
 }
 
 /* result container and payment */
-.payment {
-  max-width: 650px;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-}
 
-/* .result-container img {
-  max-width: 50px;
-} */
 .payment .left {
   width: 100%;
   background: none;
@@ -364,6 +353,8 @@ form.join {
 .hidden {
   display: none;
 }
+
+/* spinner for document on load */
 .wrapper {
   position: absolute;
   width: 100%;

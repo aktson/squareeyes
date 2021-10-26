@@ -5,16 +5,17 @@
   margin: 80px auto;
   gap: 20px;
   align-items: center;
+  text-align: center;
 }
 .result-container {
   padding: 10px;
   max-width: 300px;
 }
-.result-container h3 {
+.payment .result-container h3 {
   margin-top: 20px;
 }
 .result-container p {
-  text-align: left;
+  text-align: center;
   margin-top: 10px;
   color: var(--yellow-color);
 }
@@ -22,13 +23,13 @@
   width: 100%;
 }
 .result-container {
-  border: 2px solid var(--red-color);
+  /* border: 2px solid var(--red-color); */
 }
 .result-container p {
-  line-height: 1.2em;
+  line-height: 1.1em;
 }
 
 .result {
-  border: 4px solid red;
+  border: 2px solid rgb(95, 238, 95);
   padding: 16px;
 }

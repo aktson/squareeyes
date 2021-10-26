@@ -22,7 +22,9 @@
 .movies h2 {
   line-height: 1.2em;
 }
-
+.search-bar {
+  z-index: 10;
+}
 @keyframes dropdown {
   0% {
     transform: translateX(-1600px);
