@@ -1,3 +1,37 @@
+//get querystring and find id with async function
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const movieId = params.get("id");
+
+
+const baseUrl =  `https://ankson.no/squareeyes/wp-json/wc/store/products`;
+
+async function getMovie(url) {
+    const response = await fetch(url);
+    const result = await response.json();
+    const movie = result.find( ({id})  => id == movieId);
+
+    createHtml(movie)
+}
+
+getMovie(baseUrl)
+
+
+//function to create html
+function createHtml(movie) {
+  const payButton = document.querySelector(".pay");
+  payButton.value = `Make payment NOK${movie.prices.price}`
+
+    resultContainer.innerHTML = `
+      <div>
+        <img src="${movie.images[1].src}" />
+        <h3>${movie.name}</h3>
+        <img src = "${movie.images[3].src}" class="rating" alt="ratings"/>
+        <p>${movie.description}</p>
+        <p class="result">NOK ${movie.prices.price}</p>
+      </div>`
+}
+
 //payment form validation 
 //input fields
 const name= document.querySelector("#name");
@@ -35,36 +69,3 @@ function checkInputData(e) {
 }
 
 
-//get querystring and find id with async function
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const movieId = params.get("id");
-
-
-const baseUrl =  `https://ankson.no/squareeyes/wp-json/wc/store/products`;
-
-async function getMovie(url) {
-    const response = await fetch(url);
-    const result = await response.json();
-    const movie = result.find( ({id})  => id == movieId);
-
-    createHtml(movie)
-}
-
-getMovie(baseUrl)
-
-
-//function to create html
-function createHtml(movie) {
-  const payButton = document.querySelector(".pay");
-  payButton.value = `Make payment NOK${movie.prices.price}`
-
-    resultContainer.innerHTML = `
-      <div>
-        <img src="${movie.images[1].src}" />
-        <h3>${movie.name}</h3>
-        <img src = "${movie.images[3].src}" class="rating" alt="ratings"/>
-        <p>${movie.description}</p>
-        <p class="result">NOK ${movie.prices.price}</p>
-      </div>`
-}
