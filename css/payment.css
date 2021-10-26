@@ -30,6 +30,6 @@
 }
 
 .result {
-  border: 2px solid rgb(95, 238, 95);
+  border: 2px solid var(--yellow-color);
   padding: 16px;
 }
