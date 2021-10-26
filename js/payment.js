@@ -61,6 +61,7 @@ function createHtml(movie) {
         <img src="${movie.images[1].src}" />
         <h3>${movie.name}</h3>
         <img src = "${movie.images[3].src}" class="rating" alt="ratings"/>
+        <p>${movie.description}</p>
         <p>NOK ${movie.prices.price}</p>
       </div>`
 }

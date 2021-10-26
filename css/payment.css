@@ -8,6 +8,7 @@
 }
 .result-container {
   padding: 10px;
+  max-width: 300px;
 }
 .result-container h3 {
   margin-top: 20px;

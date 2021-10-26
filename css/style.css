@@ -322,13 +322,6 @@ form.join {
   align-items: center;
 }
 
-.result-container {
-  border: 2px solid var(--red-color);
-  padding: 16px 10px;
-}
-.result-container p {
-  line-height: 1.5em;
-}
 /* .result-container img {
   max-width: 50px;
 } */
