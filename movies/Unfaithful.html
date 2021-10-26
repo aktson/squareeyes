@@ -42,7 +42,7 @@
             </a>
           </li>
           <li><a href="../about-us.html">About us</a></li>
-          <li><a  href="../movies.html">Movies</a></li>
+          <li><a href="../movies.html">Movies</a></li>
           <li><a class="active" href="../movies/documentry.html">Pay-Per-View</a></li>
           <li><a class="cta" href="../sign-in.html ">Sign in</a></li>
           <li><a class="cta" href="../join-now.html">Join now</a></li>
@@ -104,37 +104,35 @@
           </a>
         </div>
       </section>
-      
+
       <!-- overlay of payment modal  with result from clicked movie-->
-      <div class="overlay hidden ">
+      <div class="overlay hidden">
         <i class="fas fa-times close-modal"></i>
-            <div class="form payment">
-             
-               <!--form for payment   -->
-               <form  >
-                <p id="msg-container"></p>
-                <h2>We accept</h2>
-                <img src="../images/payment method.png" alt="card-catogary" class="cards-img"/>
-      
-                <input type="text" name="name" placeholder="name on card" class="input" id="name" />
-                <label for="name">
-                  <span id="name-span" class="all-span"></span>
-                </label>
-                <input type="number" name="card-number" placeholder="card number XXXXXXX" class="input" id="card-number" />
-                <label for="card-number"><span id="card-span" class="all-span"></span></label>
-                <div class="input-half">
-                  <input type="number" name="expiry" placeholder="MM/YY" id="expiry" class="input expiry" />
-                  <label for="expiry"><span id="expiry-span" class="all-span"></span></label>
-                  <input type="number" name="ccv" placeholder="CCV" class="input ccv" id="ccv" />
-                  <label for="ccv"><span id="ccv-span" class="all-span"></span></label>
-                </div>
-                <input type="submit" class="cta" value="Pay" />
-              </form>
-            <!-- result container for clicked movie -->
-            <div class="result-container"> 
-                   </div>
-             
-            </div>
+      </div>
+      <div class="form payment">
+        <!--form for payment   -->
+        <form>
+          <p id="msg-container"></p>
+          <h2>We accept</h2>
+          <img src="../images/payment method.png" alt="card-catogary" class="cards-img" />
+
+          <input type="text" name="name" placeholder="name on card" class="input" id="name" />
+          <label for="name">
+            <span id="name-span" class="all-span"></span>
+          </label>
+          <input type="number" name="card-number" placeholder="card number XXXXXXX" class="input" id="card-number" />
+          <label for="card-number"><span id="card-span" class="all-span"></span></label>
+          <div class="input-half">
+            <input type="number" name="expiry" placeholder="MM/YY" id="expiry" class="input expiry" />
+            <label for="expiry"><span id="expiry-span" class="all-span"></span></label>
+            <input type="number" name="ccv" placeholder="CCV" class="input ccv" id="ccv" />
+            <label for="ccv"><span id="ccv-span" class="all-span"></span></label>
+          </div>
+          <input type="submit" class="cta" value="Pay" />
+        </form>
+        <!-- result container for clicked movie -->
+        <div class="result-container"></div>
+      </div>
     </main>
 
     <footer>
@@ -143,12 +141,13 @@
         <i class="fab fa-instagram"></i>
         <i class="fab fa-youtube"></i>
         <i class="fab fa-twitter"></i>
-        </div>
-      &copy; 2021 SquareEyes, Inc.  Designed and developed by ANKSON.</footer>
-      <div class="wrapper">
-        <div class="spinner"></div>
       </div>
- 
+      &copy; 2021 SquareEyes, Inc. Designed and developed by ANKSON.
+    </footer>
+    <div class="wrapper">
+      <div class="spinner"></div>
+    </div>
+
     <script src="../js/general-function.js"></script>
     <script src="../js/movie-specific.js" type="module"></script>
   </body>

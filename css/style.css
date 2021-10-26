@@ -329,9 +329,9 @@ form.join {
 .result-container p {
   line-height: 1.5em;
 }
-.result-container img {
+/* .result-container img {
   max-width: 50px;
-}
+} */
 .payment .left {
   width: 100%;
   background: none;

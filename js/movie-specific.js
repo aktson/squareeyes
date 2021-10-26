@@ -24,8 +24,6 @@ function getToPayment(e) {
 }
 
 
-
-
 //payment form validation 
 //input fields
 const name= document.querySelector("#name");
@@ -64,3 +62,16 @@ function checkInputData(e) {
     }
 }
 
+// // to get to pazment link
+// moviesArray.forEach(function(movie) {
+//     let movieLink = `<a href="payment.html?id=${movie.id}" class="cta">Watch </a>`
+//     console.log (movieLink)
+//     moviesContainer.innerHTML += `
+//     <div class="movie">
+   
+//     <img src= "${movie.imageMedium}" alt= "${movie.name}">
+//     <h2>${movie.name}</h2>
+//     <img src = "${movie.rating}" class="rating" alt="ratings">
+//   ${movieLink}
+//     </div>`
+//   })

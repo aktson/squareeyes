@@ -50,7 +50,7 @@
 
 .movies-sub {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   gap: 10px;
   animation: dropdown 1s forwards;
   transform: translateX(-1600px);
