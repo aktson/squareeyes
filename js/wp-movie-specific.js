@@ -9,13 +9,20 @@ const movieId = params.get("id");
 const baseUrl =  `https://ankson.no/squareeyes/wp-json/wc/store/products`;
 
 async function getMovie(url) {
+    try {
     const response = await fetch(url);
     const result = await response.json();
     const movie = result.find( ({id})  => id == movieId);
 
-    createHtml(movie)
+    createHtml(movie);
     createSubHtml(result);
+    }
+    catch(error) {
+        playerContainer.innerHTML = error;
+    }
+   
 }
+
 
 getMovie(baseUrl)
 
