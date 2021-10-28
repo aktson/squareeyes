@@ -10,6 +10,7 @@ const emailSpan = document.querySelector("#email-span");
 const passwordSpan = document.querySelector("#password-span");
 const firstNameSpan = document.querySelector("#first-name-span");
 const lastNameSpan = document.querySelector("#last-name-span");
+const msgContainer = document.querySelector("#")
 
 const msgContainer = document.querySelector("#msg-container");
 const form = document.querySelector("form");

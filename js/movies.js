@@ -33,7 +33,7 @@ function createHtml(movies) {
 //general search function which searches for movies
 const searchContainer = document.querySelector(".search");
 const searchButton = document.querySelector(".search-button");
-console.log(searchButton)
+
 
 
 
