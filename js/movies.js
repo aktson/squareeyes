@@ -30,6 +30,28 @@ function createHtml(movies) {
     })
 }
 
+//general search function which searches for movies
+const searchContainer = document.querySelector(".search");
+const searchButton = document.querySelector(".search-button");
+console.log(searchButton)
+
+
+
+searchButton.addEventListener("click", function() {
+    const userText = searchContainer.value;
+
+    if (userText) {
+        const newUrl = baseUrl + `?search=${userText}`;
+        moviesContainer.innerHTML = "";
+        getMovies(newUrl);
+    }
+    else  {
+        moviesContainer.innerHTML = `<p class="center">No results</p>`;    }
+   
+})
+
+
+
 //import methog with manually adding movies in array
 // import {moviesArray} from "./movies-list.js"
 

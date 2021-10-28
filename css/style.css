@@ -62,7 +62,8 @@ input {
 }
 header,
 footer,
-.cta {
+.cta,
+.search-button {
   font-family: "cuprum", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 /*global header and footer */
@@ -86,9 +87,11 @@ header {
   border-radius: 4px;
   padding: 4px;
 }
+
 nav ul {
   display: flex;
   padding-right: 6px;
+  position: relative;
 }
 
 nav li,
@@ -99,17 +102,10 @@ nav a {
   font-size: 1rem;
   transition: 0.3s ease-in;
 }
-.search {
-  padding: 5px;
-  margin-top: 5px;
-  outline: none;
-  background: none;
-  border: 2px solid white;
-  color: white;
-}
 
 nav a:hover {
-  background-color: var(--red-color);
+  background-color: var(--yellow-color);
+  border-radius: 8px;
 }
 nav li:nth-child(even) {
   animation: drop 0.5s forwards;
@@ -149,14 +145,14 @@ nav li:nth-child(odd) {
 }
 
 .active {
-  background-color: var(--red-color);
+  background-color: var(--yellow-color);
   border-radius: 8px;
   letter-spacing: 2px;
   text-align: center;
   cursor: pointer;
 }
 .active.cta {
-  background-color: var(--red-color);
+  background-color: var(--yellow-color);
   letter-spacing: 2px;
   color: aliceblue;
 }
@@ -183,10 +179,24 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   border-top: 1px solid var(--darkgray-color);
+  position: relative;
 }
 .social-icons {
   font-size: 1.4em;
   margin: 10px auto;
+}
+.contact-div {
+  position: absolute;
+  right: 20px;
+}
+.contact-div p {
+  margin-bottom: 10px;
+}
+.contact {
+  display: inline;
+}
+.contact:hover {
+  cursor: pointer;
 }
 /*global form */
 
@@ -224,6 +234,7 @@ label {
   padding: 10px;
   border-radius: 8px;
   color: #000;
+  text-align: center;
 }
 .error {
   background: rgba(242, 7, 70, 0.7);
@@ -242,7 +253,6 @@ label {
   0% {
     width: 0%;
   }
-
   100% {
     width: 100%;
   }
@@ -383,4 +393,36 @@ form.join {
   to {
     transform: rotate(360deg);
   }
+}
+/* contact page */
+.index-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--darkgray-color);
+  padding: 20px;
+  margin: 80px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  transition: 0.5s ease;
+  animation: zoomin 0.2s linear forwards;
+}
+.contact-form input {
+  padding: 16px;
+}
+.contact-form h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+.contact-form .cta:hover {
+  cursor: pointer;
 }

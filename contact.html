@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content=" sign in to squareeyes for high-quality videos and movies" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <title>Squareeyes | Sign in</title>
+    <meta name="description" content=" watch and upload high-quality videos and movies at squareeyes" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Squareeyes | Contact</title>
     <script src="https://kit.fontawesome.com/e9fca197f4.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for https://squareeyesnet.netlify.app/ -->
     <script>
@@ -26,6 +27,7 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
   </head>
+
   <body>
     <header>
       <a href="index.html">
@@ -35,35 +37,32 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html"><i class="fas fa-home"></i></a>
+            <a class="active" href="index.html"><i class="fas fa-home"></i></a>
           </li>
           <li><a href="about-us.html">About us</a></li>
           <li><a href="movies.html">Movies</a></li>
-          <li><a class="cta active" href="sign-in.html">Sign in</a></li>
+          <li><a class="cta" href="sign-in.html">Sign in</a></li>
           <li><a class="cta" href="join-now.html">Join now</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="form signin">
-        <form>
-          <p id="msg-container"></p>
-          <h2>Sign in</h2>
-
-          <input type="text" name="email" placeholder="e-mail address" class="input" id="email" />
-          <label for="email">
-            <span id="email-span" class="all-span"></span>
-          </label>
-
-          <input type="password" name="password" placeholder="password " class="input" id="password" />
-          <label for="email">
-            <span id="password-span" class="all-span"></span>
-          </label>
-          <p><a href="#">forget password?</a></p>
-          <input type="submit" class="cta" value="Sign in" />
-        </form>
-      </div>
+    <main class="index-contact">
+      <form class="contact-form">
+        <p id="msg-container"></p>
+        <h1>Contact Us</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" class="input" id="name" />
+        <span id="name-span" class="all-span"></span>
+        <label for="email">E-mail</label>
+        <input type="email" name="email " class="input" id="email" />
+        <span id="email-span" class="all-span"></span>
+        <label for="textarea">Enter your Query</label>
+        <textarea name="textarea" id="textarea" cols="40" rows="10" class="input"></textarea>
+        <span id="textarea-span" class="all-span"></span>
+        <input type="submit" class="cta" value="Send" />
+      </form>
     </main>
+
     <footer>
       <div class="social-icons">
         <i class="fab fa-facebook"></i>
@@ -72,15 +71,15 @@
         <i class="fab fa-twitter"></i>
       </div>
       &copy; 2021 SquareEyes, Inc. Designed and developed by ANKSON.
-      <div class="contact-div">
-        <p>Need help?</p>
-        <a href="contact.html"><button class="cta contact">Contact us</button></a>
-      </div>
     </footer>
+    <div class="contact-div">
+      <p>Need help?</p>
+      <a href="contact.html"><button class="cta contact">Contact us</button></a>
+    </div>
     <div class="wrapper">
       <div class="spinner"></div>
     </div>
     <script src="js/general-function.js"></script>
-    <script src="js/sign-in.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
