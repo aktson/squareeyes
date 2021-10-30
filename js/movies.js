@@ -46,8 +46,9 @@ searchButton.addEventListener("click", function() {
         getMovies(newUrl);
     }
     else  {
-        moviesContainer.innerHTML = `<p class="center">Sorry...No result found</p>`;    }
-   
+        moviesContainer.innerHTML = `<p class="center">Sorry... No result found</p>`; 
+    }
+      
 })
 
 
