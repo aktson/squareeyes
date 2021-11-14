@@ -1,7 +1,7 @@
 
 const moviesContainer = document.querySelector(".movies");
 
-const baseUrl = "https://ankson.no/squareeyes/wp-json/wc/store/products";
+const baseUrl = "https://ankson.no/wp-json/wc/store/products";
 
 async function getMovies(url) {
     try {

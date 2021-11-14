@@ -4,7 +4,7 @@ const params = new URLSearchParams(queryString);
 const movieId = params.get("id");
 
 
-const baseUrl =  `https://ankson.no/squareeyes/wp-json/wc/store/products`;
+const baseUrl =  `https://ankson.no/wp-json/wc/store/products`;
 
 async function getMovie(url) {
     try {
