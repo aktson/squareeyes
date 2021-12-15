@@ -6,21 +6,21 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const movieId = params.get("id");
 
-const baseUrl =  `https://ankson.no/wp-json/wc/store/products`;
+const baseUrl = `https://ankson.no/wp-json/wc/store/products`;
 
 async function getMovie(url) {
     try {
-    const response = await fetch(url);
-    const result = await response.json();
-    const movie = result.find( ({id})  => id == movieId);
+        const response = await fetch(url);
+        const result = await response.json();
+        const movie = result.find(({ id }) => id == movieId);
 
-    createHtml(movie);
-    createSubHtml(result);
+        createHtml(movie);
+        createSubHtml(result);
     }
-    catch(error) {
+    catch (error) {
         playerContainer.innerHTML = error;
     }
-   
+
 }
 
 
@@ -28,8 +28,10 @@ getMovie(baseUrl)
 
 
 function createHtml(movie) {
-        playerContainer.innerHTML = 
-            `<div class="player">
+    const pageTitle = document.querySelector("title");
+    pageTitle.innerHTML = `${movie.name}` + " | " + "Squareeyes";
+    playerContainer.innerHTML =
+        `<div class="player">
                 <a href="../sign-in.html">
                     <img src="${movie.images[2].src}" />
                 </a>
@@ -40,12 +42,12 @@ function createHtml(movie) {
                 <p>${movie.description}</p>
                 <a href="../payment.html?id=${movie.id}" class="cta payperview">Watch for NOK ${movie.prices.price}</a>
             </div> `
-       
+
 }
-function createSubHtml (movies) {
- for (let i = 0; i < movies.length; i++) {
-    
-    movieSubContainer.innerHTML += `
+function createSubHtml(movies) {
+    for (let i = 0; i < movies.length; i++) {
+
+        movieSubContainer.innerHTML += `
     <div>
     <a href="movie-specific.html?id=${movies[i].id}">
     <img src="${movies[i].images[1].src}" alt="${movies[i].name}" />
@@ -54,7 +56,7 @@ function createSubHtml (movies) {
     </a>
     </div>`
 
- }
-   
-   
+    }
+
+
 }
