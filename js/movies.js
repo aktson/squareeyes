@@ -33,9 +33,6 @@ function createHtml(movies) {
 const searchContainer = document.querySelector(".search");
 const searchButton = document.querySelector(".search-button");
 
-
-
-
 searchButton.addEventListener("click", function () {
     const userText = searchContainer.value;
 
@@ -50,8 +47,4 @@ searchButton.addEventListener("click", function () {
 
 })
 
-
-
-//import methog with manually adding movies in array
-// import {moviesArray} from "./movies-list.js"
 
