@@ -23,9 +23,7 @@ async function getMovie(url) {
 
 }
 
-
 getMovie(baseUrl)
-
 
 function createHtml(movie) {
     const pageTitle = document.querySelector("title");
@@ -48,15 +46,13 @@ function createSubHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
 
         movieSubContainer.innerHTML += `
-    <div>
-    <a href="movie-specific.html?id=${movies[i].id}">
-    <img src="${movies[i].images[1].src}" alt="${movies[i].name}" />
-    <p>${movies[i].name}</p>
-    <img src="${movies[i].images[3].src}" alt="ratings" class="rating"/>
-    </a>
-    </div>`
-
+        <div>
+            <a href="movie-specific.html?id=${movies[i].id}">
+            <img src="${movies[i].images[1].src}" alt="${movies[i].name}" />
+            <p>${movies[i].name}</p>
+            <img src="${movies[i].images[3].src}" alt="ratings" class="rating"/>
+            </a>
+        </div>
+        `
     }
-
-
 }

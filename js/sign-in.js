@@ -8,17 +8,15 @@ const form = document.querySelector("form");
 form.addEventListener("submit", checkInputData);
 
 function checkInputData(e) {
-e.preventDefault();
+    e.preventDefault();
 
-    checkInputValue (checkValidEmail(email.value),emailSpan,"enter a valid email")
+    checkInputValue(checkValidEmail(email.value), emailSpan, "enter a valid email")
     checkInputValue(checkLength(password.value, 5), passwordSpan, "password must be atleast 5 character")
 
-    if (checkValidEmail(email.value) && checkLength(password.value,5)) {
+    if (checkValidEmail(email.value) && checkLength(password.value, 5)) {
 
-    msgContainer.classList.add("success-msg");
+        msgContainer.classList.add("success-msg");
         showMsg(msgContainer, "Sign in successful");
         form.reset();
     }
 }
-
-// showMsg(emailSpan, "error", "ankit Soni");
