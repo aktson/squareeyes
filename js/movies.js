@@ -2,19 +2,18 @@
 const moviesContainer = document.querySelector(".movies");
 
 const baseUrl = "https://ankson.no/wp-json/wc/store/products";
-
+//async function to get movies and create html from received data
 async function getMovies(url) {
     try {
-    const response = await fetch(url);
-    const result = await response.json();
-    createHtml(result)
+        const response = await fetch(url);
+        const result = await response.json();
+        createHtml(result)
     }
-    catch(error) {
+    catch (error) {
         moviesContainer.innerHTML = error;
     }
 }
 getMovies(baseUrl);
-
 
 function createHtml(movies) {
 
@@ -37,7 +36,7 @@ const searchButton = document.querySelector(".search-button");
 
 
 
-searchButton.addEventListener("click", function() {
+searchButton.addEventListener("click", function () {
     const userText = searchContainer.value;
 
     if (userText) {
@@ -45,10 +44,10 @@ searchButton.addEventListener("click", function() {
         moviesContainer.innerHTML = "";
         getMovies(newUrl);
     }
-    else  {
-        moviesContainer.innerHTML = `<p class="center">Sorry... No result found</p>`; 
+    else {
+        moviesContainer.innerHTML = `<p class="center">Sorry... No result found</p>`;
     }
-      
+
 })
 
 
