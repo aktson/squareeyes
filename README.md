@@ -1,3 +1,3 @@
 # Squareeyes website
-I will go on to create functional Squareeyes website using html and css. 
+Website for created and updated during first. Wordpress added for content managment system and intigrated with woocommerce to fetch products
 
